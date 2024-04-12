@@ -70,6 +70,12 @@
         font-size: 14px;
         min-height: 230px;
     }
+    section.terms h3 {
+        font-size: 22px;
+    }
+    section.terms  p, section.terms ul li {
+        font-size: 14px;
+    }
 }
 
 @media(max-width:992px){
@@ -185,6 +191,10 @@
     .casino-wrap {
         margin-bottom: 10px;
     }
+    section.terms h3 {
+        font-size: 20px;
+    }
+ 
 }
 @media(max-width:767px){
     .cruise-txt p {
@@ -227,6 +237,7 @@
     .sub-bnr-txt h3 {
         font-size: 22px;
     }
+
 }
 
 @media(max-width:575px){
@@ -270,6 +281,19 @@
     }
     .sub-bnr-txt h3 {
         font-size: 20px;
+    }
+    section.terms  p, section.terms ul li {
+        margin-bottom: 5px;
+    }
+    section.terms h3 {
+        font-size: 18px;
+    }
+    section.terms h3 {
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .footer-links ul {
+        gap: 10px;
     }
 }
 @media(max-width:376px){

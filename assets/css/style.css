@@ -310,8 +310,17 @@ img{
 }
 /* crises page css end here  */
 
-
-
+section.terms h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+section.terms  p, section.terms ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+section.terms ul{
+    padding-left: 20px;
+}
 
 
 

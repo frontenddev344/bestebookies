@@ -50,7 +50,6 @@ img{
 /* header css start here */
 .site-header {
     padding: 20px 20px;
-   
     background-color: #fff;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -79,7 +78,6 @@ img{
     color: var(--black);
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 18px;
     position: relative;
     display: inline-block;
 }
@@ -137,8 +135,9 @@ img{
     text-transform: uppercase;
     line-height: 1.1;
 }
+
 .banner-txt h3{
-    font-size: 30px;
+
     font-weight: 600;
 }
 .banner-txt h2{
@@ -152,7 +151,7 @@ img{
     letter-spacing: 8px;
 }
 .contact-btn a {
-    font-size: 18px;
+   
     color: #fff;
     padding: 10px 25px;
     background-color: #b3001b;
@@ -165,8 +164,8 @@ img{
 }
 /* banner css end here */
 /* welcome section css start here */
+
 .welcome-txt p{
-    font-size: 18px;
     color: var(--black);
 }
 .welcome-img img {
@@ -187,17 +186,16 @@ img{
     border-left: none;
 }
 .stats i {
-    font-size: 25px;
+   
     color: var(--white);
 }
 .stats .counting {
-    font-size: 30px;
     font-weight: 500;
     margin: 10px 0;
     color: var(--white);
 }
+
 .stats h5 {
-    font-size: 18px;
     font-weight: 400;
     color: var(--white);
 }
@@ -229,7 +227,6 @@ img{
     justify-content: center;
 }
 .sub-bnr-txt ul li{
-    font-size: 20px;
     color: var(--white);
 }
 .sub-bnr-txt ul li a{
@@ -241,20 +238,20 @@ img{
     margin: 0 auto    ;
 }
 .casino-txt p {
-    font-size: 16px;
     text-align: center;
 }
+
 .casino-box-txt h3 {
-    font-size: 30px;
+
     color: var(--gray);
     margin-bottom: 15px;
 }
+
 .casino-box-txt p{
-    font-size: 18px;
     color: var(--black);
 }
 .casino-box-txt a {
-    font-size: 20px;
+    
     padding: 10px 20px;
     background-color: #0a0e35;
     color: #fff;
@@ -265,7 +262,6 @@ img{
 }
 .casino-box-txt a i{
     padding-left: 10px;
-    font-size: 16px;
 }
 .casino-img {
     height: 500px;
@@ -305,23 +301,22 @@ img{
     padding: 10px 15px;
 }
 .cruise-txt h3 {
-    font-size: 22px;
+
     margin-bottom: 10px;
 }
+
 .cruise-txt p {
-    font-size: 16px;
     color: #000;
     min-height: 220px;
 
 }
 /* crises page css end here  */
-
 section.terms h3 {
-    font-size: 25px;
+    
     margin-bottom: 10px;
 }
+
 section.terms  p, section.terms ul li {
-    font-size: 16px;
     margin-bottom: 10px;
 }
 section.terms ul{
@@ -335,15 +330,15 @@ section.terms ul{
     background-image: url(../images/DESTINATIONS.avif);
 }
 /* contact us page css start here */
+
 .contact-txt p {
-    font-size: 16px;
     margin-bottom: 10px;
 }
 .contact-txt p a{
     color: var(--red);
 }
 .contact-txt h3 {
-    font-size: 22px;
+    
     margin-bottom: 5px;
 }
 .contact-txt {
@@ -354,8 +349,8 @@ section.terms ul{
     gap: 20px;
     align-items: center;
 }
+
 .contact-txt ul li a{
-    font-size: 25px;
     color:var(--gray);
     line-height: normal;
 
@@ -404,8 +399,8 @@ background-color: var(--gray);
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .footer-links ul li a{
-    font-size: 16px;
     color: var(--white);
     text-transform: uppercase;
 }
@@ -416,8 +411,8 @@ background-color: var(--gray);
 .footer-links {
     margin: 20px 0;
 }
+
 .copy-right p {
-    font-size: 16px;
     color: #ffffff9c;
     text-align: center;
     margin: 0;
@@ -433,11 +428,32 @@ background-color: var(--gray);
     justify-content: center;
     align-items: center;
 }
+
 .social-link ul li a{
-    font-size: 25px;
+ 
     color: var(--white);
 }
 .social-link {
     margin-bottom: 15px;
 }
 /* footer section css end here */
+
+.casino-txt p, .casino-box-txt a i, .cruise-txt p, section.terms  p, section.terms ul li, .contact-txt p, .footer-links ul li a, .copy-right p
+{
+    font-size: 16px;
+}
+.nav-links ul li a, .contact-btn a, .welcome-txt p, .stats h5, .casino-box-txt p{
+    font-size: 18px;
+}
+.sub-bnr-txt ul li, .casino-box-txt a{
+    font-size: 20px;
+}
+.cruise-txt h3, .contact-txt h3 {
+    font-size: 22px;
+}
+.stats i, section.terms h3, .contact-txt ul li a, .social-link ul li a{
+    font-size: 25px;
+}
+.banner-txt h3, .stats .counting, .casino-box-txt h3{
+    font-size: 30px;
+}

@@ -50,10 +50,14 @@ img{
 /* header css start here */
 .site-header {
     padding: 20px 20px;
-    /* position: fixed; */
+   
+    background-color: #fff;
     width: 100%;
-    z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.site-header.fixed-header {
+    position: fixed;
+    z-index: 99;
 }
 .site-logo img {
     max-width: 250px;
@@ -322,15 +326,47 @@ section.terms ul{
     padding-left: 20px;
 }
 
+.destinations-main p {
+    min-height: 170px;
+}
 
+/* contact us page css start here */
+.contact-txt p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact-txt p a{
+    color: var(--red);
+}
+.contact-txt h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.contact-txt {
+    margin-bottom: 15px;
+}
+.contact-txt ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contact-txt ul li a{
+    font-size: 25px;
+    color:var(--gray);
+    line-height: normal;
 
-
-
-
-
-
-
-
+}
+.contact-txt ul li{
+    line-height: normal;
+}
+.contact-img {
+    height: 100%;
+}
+.contact-img img{
+    height: 100%;
+    object-fit: cover;
+}
+/* contact us page css end here */
 
 
 
@@ -371,7 +407,7 @@ background-color: var(--gray);
     transition: all 0.3s linear;
 }
 .footer-links {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 .copy-right p {
     font-size: 16px;
@@ -383,5 +419,18 @@ background-color: var(--gray);
 }
 .copy-right p a{
     color: var(--red);
+}
+.social-link ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.social-link ul li a{
+    font-size: 25px;
+    color: var(--white);
+}
+.social-link {
+    margin-bottom: 15px;
 }
 /* footer section css end here */

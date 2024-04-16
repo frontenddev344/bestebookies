@@ -1,459 +1,365 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap);
+
 :root{
     --red:#b3001b;
     --black:#000;
     --gray:#0a0e35;
     --light_grsy:#232b5c;
-    --white:#fff;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --white:#fff
 }
 body{
-    margin: 0;
-    padding: 0;
-    font-family: "Barlow", sans-serif;
-
+    margin:0;
+    padding:0;
+    font-family:Barlow,sans-serif
 }
 ul{
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
+    list-style:none;
+    padding-left:0;
+    margin-bottom:0
 }
 a{
-    text-decoration: none;
+    text-decoration:none
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: "Oswald", sans-serif;
+h1,h2,h3,h4,h5,h6{
+    font-family:Oswald,sans-serif
 }
 p{
-    font-family: "Barlow", sans-serif;
-}
-img{
-    width: 100%;
+    font-family:Barlow,sans-serif
 }
 .container{
-    max-width: 1300px;
+    max-width:1300px
 }
 .ptb-70{
-    padding: 70px 0;
+    padding:70px 0
 }
 .ptb-50{
-    padding: 50px 0;
+    padding:50px 0
 }
 .ptb-30{
-    padding: 30px 0;
+    padding:30px 0
 }
-/* global css end here */
-/* header css start here */
-.site-header {
-    padding: 20px 20px;
-    background-color: #fff;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.site-header{
+    padding:20px;
+    background-color:#fff;
+    width:100%
 }
-.site-header.fixed-header {
-    position: fixed;
-    z-index: 99;
+.site-header.fixed-header{
+    position:fixed;
+    z-index:99
 }
-.site-logo img {
-    max-width: 250px;
+.site-logo img{
+    max-width:250px
 }
-.toggle, .close {
-    display: none;
+.close,.toggle{
+    display:none
 }
-.nav-links ul {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+.nav-links ul{
+    display:flex;
+    gap:50px
 }
-.site-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.site-header nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
 }
 .nav-links ul li a{
-    color: var(--black);
-    text-transform: uppercase;
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
+    color:var(--black);
+    font-weight:600;
+    position:relative;
+    display:inline-block
 }
 .nav-links ul li a::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0%;
-    height: 2px;
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:0%;
+    height:2px;
     background-color:var(--red);
-    transition: all 0.3s linear;
+    transition:.3s linear
 }
-.nav-links ul li a:hover::before, .nav-links ul li a.active::before{
-    width: 100%;
-    
+.contact-txt p a,.copy-right p a,.nav-links ul li a.active,.nav-links ul li a:hover{
+    color:var(--red)
 }
-.nav-links ul li a:hover, .nav-links ul li a.active{
-    color: var(--red);
-}
-
-/* header css end here */
-
-/* banner css start here */
 .site-banner{
-    background-image: url(../images/hero-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    position: relative;
+    background-image:url(../images/hero-banner.jpg);
+    height:70vh;
+    position:relative
 }
 .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.4;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background-color:#000;
+    opacity:.4
 }
-.site-banner .container{
-    height: 100%;
+.contact-img,.site-banner .container{
+    height:100%
 }
-.banner-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
+.banner-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    position:relative
 }
-.banner-txt h3, .banner-txt h2, .banner-txt h1{
-    text-align: center;
-    color: var(--white);
-    text-transform: uppercase;
-    line-height: 1.1;
+.banner-txt h1,.banner-txt h2,.banner-txt h3{
+    text-align:center;
+    color:var(--white);
+    text-transform:uppercase;
+    line-height:1.1
 }
-
 .banner-txt h3{
-
-    font-weight: 600;
+    font-weight:600
 }
 .banner-txt h2{
-    font-size: 40px;
-    font-weight: 700;
+    font-size:40px;
+    font-weight:700
 }
 .banner-txt h1{
-    font-size: 60px;
-    font-weight: 800;
-    text-shadow: 2px 2px 2px rgb(183 0 18);
-    letter-spacing: 8px;
+    font-size:60px;
+    font-weight:800;
+    text-shadow:2px 2px 2px rgb(183 0 18);
+    letter-spacing:8px
 }
-.contact-btn a {
-   
-    color: #fff;
-    padding: 10px 25px;
-    background-color: #b3001b;
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 15px;
-    font-weight: 600;
-    border-radius: 5px;
+.contact-btn a{
+    color:#fff;
+    padding:10px 25px;
+    background-color:#b3001b;
+    display:block;
+    width:fit-content;
+    margin:15px auto 0;
+    font-weight:600;
+    border-radius:5px
 }
-/* banner css end here */
-/* welcome section css start here */
+.contact-btn a:hover{
+    background-color: #0a0e35;
+    transition: all 0.3s linear;
 
-.welcome-txt p{
-    color: var(--black);
 }
-.welcome-img img {
-    height: 100%;
-    object-fit: cover;
-}.welcome-img {
-    height: 500px;
-    overflow: hidden;
+.casino-box-txt p,.welcome-txt p{
+    color:var(--black)
 }
-
-/* welcome section css end here */
-
-/* counter section css start here */
-.stats {
-    /* border: 1px solid #fff; */
-    text-align: center;
-    padding: 15px;
-    border-left: none;
+.social-link ul li a,.stats .counting,.stats h5,.stats i,.sub-bnr-txt h3,.sub-bnr-txt ul li{
+    color:var(--white)
 }
-.stats i {
-   
-    color: var(--white);
+.contact-img img,.welcome-img img{
+    height:100%;
+    object-fit:cover
 }
-.stats .counting {
-    font-weight: 500;
-    margin: 10px 0;
-    color: var(--white);
+.casino-img,.welcome-img{
+    height:500px;
+    overflow:hidden
 }
-
-.stats h5 {
-    font-weight: 400;
-    color: var(--white);
+.stats{
+    padding:15px;
+    border-left:none
+}
+.stats .counting{
+    font-weight:500;
+    margin:10px 0
+}
+.stats h5{
+    font-weight:400
 }
 #counter-stats{
-    background-color: var(--light_grsy);
+    background-color:var(--light_grsy)
 }
-/* counter section css end here */
-/* casino page css start here */
 .sub-banner{
-    background-image: url(../images/sub-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 0;
-    position: relative;
+    background-image:url(../images/sub-banner.jpg);
+    padding:100px 0;
+    position:relative
 }
-.sub-bnr-txt {
-    text-align: center;
-    position: relative;
+.sub-bnr-txt{
+    position:relative
 }
-.sub-bnr-txt h3 {
-    font-size: 35px;
-    color: var(--white);
-    text-transform: uppercase;
+.sub-bnr-txt h3{
+    font-size:35px
 }
 .sub-bnr-txt ul{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-.sub-bnr-txt ul li{
-    color: var(--white);
+    display:flex;
+    gap:10px;
+    justify-content:center
 }
 .sub-bnr-txt ul li a{
-    color: var(--red);
-    font-weight: 600;
+    color:var(--red);
+    font-weight:600
 }
 .casino-txt{
-    width: 70%;
-    margin: 0 auto    ;
+    width:70%;
+    margin:0 auto
 }
-.casino-txt p {
-    text-align: center;
+.casino-box-txt h3{
+    color:var(--gray);
+    margin-bottom:15px
 }
-
-.casino-box-txt h3 {
-
-    color: var(--gray);
-    margin-bottom: 15px;
+.casino-box-txt a{
+    padding:10px 20px;
+    background-color:#0a0e35;
+    color:#fff;
+    display:block;
+    width:fit-content;
+    margin:20px 0
 }
-
-.casino-box-txt p{
-    color: var(--black);
-}
-.casino-box-txt a {
-    
-    padding: 10px 20px;
-    background-color: #0a0e35;
-    color: #fff;
-    display: block;
-    width: fit-content;
-    margin: 20px 0;
-    text-transform: uppercase;
+.casino-box-txt a:hover{
+    background-color: #b3001b;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 .casino-box-txt a i{
-    padding-left: 10px;
-}
-.casino-img {
-    height: 500px;
-    overflow: hidden;
+    padding-left:10px
 }
 .casino-img img{
-    height: 100%;
-    object-fit: contain;
+    height:100%;
+    object-fit:contain
 }
-.casino-wrap {
-    margin-bottom: 50px;
+.casino-wrap{
+    margin-bottom:50px
 }
-.casino-wrap .row {
-    align-items: center;
-}
-/* casino page css end here */
-
-/* cruises page css start here */
-.cruise-wrap {
-    border: 1px solid #b9b9b9;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    overflow: hidden;
-    margin-bottom: 25px;
+.cruise-wrap{
+    border:1px solid #b9b9b9;
+    border-radius:5px;
+    overflow:hidden;
+    margin-bottom:25px
 }
 .cruise-banner{
-    background-image: url(../images/CRUISE-bnr.webp);
+    background-image:url(../images/CRUISE-bnr.webp)
 }
-.cruise-img {
-    height: 250px;
+.cruise-img{
+    height:250px;
+    overflow: hidden;
+}
+.cruise-img:hover img{
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 .cruise-img img{
-    object-fit: cover;
-    height: 100%;
+    object-fit:cover;
+    height:100%
 }
-.cruise-txt {
-    padding: 10px 15px;
+.cruise-txt{
+    padding:10px 15px
 }
-.cruise-txt h3 {
-
-    margin-bottom: 10px;
+.contact-txt p,.cruise-txt h3,section.terms h3,section.terms p,section.terms ul li{
+    margin-bottom:10px
 }
-
-.cruise-txt p {
-    color: #000;
-    min-height: 220px;
-
-}
-/* crises page css end here  */
-section.terms h3 {
-    
-    margin-bottom: 10px;
-}
-
-section.terms  p, section.terms ul li {
-    margin-bottom: 10px;
+.cruise-txt p{
+    color:#000;
+    min-height:220px
 }
 section.terms ul{
-    padding-left: 20px;
+    padding-left:20px
 }
-
-.destinations-main p {
-    min-height: 170px;
+.destinations-main p{
+    min-height:170px
 }
 .destination-bnr{
-    background-image: url(../images/DESTINATIONS.avif);
+    background-image:url(../images/DESTINATIONS.avif)
 }
-/* contact us page css start here */
-
-.contact-txt p {
-    margin-bottom: 10px;
+.contact-txt h3{
+    margin-bottom:5px
 }
-.contact-txt p a{
-    color: var(--red);
-}
-.contact-txt h3 {
-    
-    margin-bottom: 5px;
-}
-.contact-txt {
-    margin-bottom: 15px;
+.contact-txt,.social-link{
+    margin-bottom:15px
 }
 .contact-txt ul{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    display:flex;
+    gap:20px;
+    align-items:center
 }
-
+.footer-links ul,.footer-logo{
+    justify-content:center;
+    display:flex
+}
 .contact-txt ul li a{
     color:var(--gray);
-    line-height: normal;
-
+    line-height:normal
 }
 .contact-txt ul li{
-    line-height: normal;
-}
-.contact-img {
-    height: 100%;
-}
-.contact-img img{
-    height: 100%;
-    object-fit: cover;
+    line-height:normal
 }
 .contact-banner{
-    background-image: url(../images/contact-bnr.jpg);
+    background-image:url(../images/contact-bnr.jpg)
 }
-/* contact us page css end here */
-
-
-
-
-
-
-
-
-
-
-
-/* footer section css start here */
-.site-footer {
-background-color: var(--gray);
+.site-footer{
+    background-color:var(--gray)
 }
-.footer-logo img {
-    width: 300px;
+.footer-logo img{
+    width:300px
 }
 .footer-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:center
 }
-.footer-links ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.footer-links ul{
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap
 }
-
 .footer-links ul li a{
-    color: var(--white);
-    text-transform: uppercase;
+    color:var(--white)
 }
 .footer-links ul li a:hover{
-    color: var(--red);
-    transition: all 0.3s linear;
+    color:var(--red);
+    transition:.3s linear
 }
-.footer-links {
-    margin: 20px 0;
+.footer-links{
+    margin:20px 0
 }
-
-.copy-right p {
-    color: #ffffff9c;
-    text-align: center;
-    margin: 0;
-    padding-top: 20px;
-    border-top: 1px solid #fff;
+.copy-right p{
+    color:#ffffff9c;
+    margin:0;
+    padding-top:20px;
+    border-top:1px solid #fff
 }
-.copy-right p a{
-    color: var(--red);
+.social-link ul{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    align-items:center
 }
-.social-link ul {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+.casino-box-txt a i,.casino-txt p,.contact-txt p,.copy-right p,.cruise-txt p,.footer-links ul li a,section.terms p,section.terms ul li{
+    font-size:16px
 }
-
-.social-link ul li a{
- 
-    color: var(--white);
+.casino-box-txt p,.contact-btn a,.nav-links ul li a,.stats h5,.welcome-txt p{
+    font-size:18px
 }
-.social-link {
-    margin-bottom: 15px;
+.casino-box-txt a,.sub-bnr-txt ul li{
+    font-size:20px
 }
-/* footer section css end here */
-
-.casino-txt p, .casino-box-txt a i, .cruise-txt p, section.terms  p, section.terms ul li, .contact-txt p, .footer-links ul li a, .copy-right p
-{
-    font-size: 16px;
+.contact-txt h3,.cruise-txt h3{
+    font-size:22px
 }
-.nav-links ul li a, .contact-btn a, .welcome-txt p, .stats h5, .casino-box-txt p{
-    font-size: 18px;
+.contact-txt ul li a,.social-link ul li a,.stats i,section.terms h3{
+    font-size:25px
 }
-.sub-bnr-txt ul li, .casino-box-txt a{
-    font-size: 20px;
+.banner-txt h3,.casino-box-txt h3,.stats .counting{
+    font-size:30px
 }
-.cruise-txt h3, .contact-txt h3 {
-    font-size: 22px;
+.casino-wrap .row,.nav-links ul{
+    align-items:center
 }
-.stats i, section.terms h3, .contact-txt ul li a, .social-link ul li a{
-    font-size: 25px;
+.nav-links ul li a.active::before,.nav-links ul li a:hover::before,.overlay,img{
+    width:100%
 }
-.banner-txt h3, .stats .counting, .casino-box-txt h3{
-    font-size: 30px;
+.site-banner,.sub-banner{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover
+}
+.cruise-wrap,.site-header{
+    box-shadow:rgba(0,0,0,.35) 0 5px 15px
+}
+.casino-box-txt a,.footer-links ul li a,.nav-links ul li a,.sub-bnr-txt h3{
+    text-transform:uppercase
+}
+.casino-txt p,.copy-right p,.stats,.sub-bnr-txt{
+    text-align:center
 }

@@ -110,7 +110,7 @@
         flex-direction: column;
     }
     .nav-links {
-        position: absolute;
+        position: fixed;
         background-color: #0a0e35;
         left: 0;
         top: 0;
@@ -263,6 +263,13 @@
     .contact-img {
         padding-bottom: 20px;
     }
+    .casino-wrap:nth-child(1) .row, .casino-wrap:nth-child(3) .row, .casino-wrap:nth-child(5) .row{
+        flex-direction: column-reverse;
+    }
+    .casino-img {
+        height: 450px;
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:575px){
@@ -270,7 +277,7 @@
         padding: 10px 10px;
     }
     .social-link ul li a {
-        font-size: 20px;
+        font-size: 25px;
     }
     .site-logo img {
         max-width: 180px;
@@ -322,6 +329,9 @@
     }
     .footer-links ul {
         gap: 10px;
+    }
+    .nav-links {
+        width: 100%;
     }
 }
 @media(max-width:376px){

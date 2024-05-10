@@ -110,6 +110,14 @@ p{
     text-transform:uppercase;
     line-height:1.1
 }
+.privacy-wrap  a {
+    color: #0a0e35;
+}
+.welcome-txt h3{
+    font-size: 35px;
+    color:var(--gray);
+    font-weight: 600;
+}
 .banner-txt h3{
     font-weight:600
 }
